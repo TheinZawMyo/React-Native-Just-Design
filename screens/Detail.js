@@ -6,7 +6,6 @@ import {
   Text,
   View,
   FlatList,
-  StatusBar,
 } from 'react-native';
 import {Button, Card, Headline} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -31,7 +30,6 @@ const Detail = ({navigation}) => {
   };
   return (
     <SafeAreaView>
-      <StatusBar backgroundColor="#5e72e5" />
       <View style={{height: 350}}>
         <Image source={require('../images/shoe.jpg')} style={styles.image} />
         <Icon
@@ -51,7 +49,7 @@ const Detail = ({navigation}) => {
       <View>
         <Card style={styles.card}>
           <View>
-            <Headline style={{color: '#4E36C7'}}>Shoes</Headline>
+            <Headline style={{color: '#7078f4'}}>Shoes</Headline>
           </View>
           <View
             style={{
@@ -69,7 +67,7 @@ const Detail = ({navigation}) => {
                   borderRadius: 50,
                   height: 50,
                   width: 50,
-                  borderColor: '#4E36C7',
+                  borderColor: '#7078f4',
                   borderWidth: 2,
                 }}>
                 <Image
@@ -116,7 +114,6 @@ const styles = StyleSheet.create({
     marginTop: -30,
     padding: 15,
     paddingVertical: 25,
-    color: '#4E36C7',
   },
   peopleIcon: {
     width: '100%',
@@ -126,6 +123,8 @@ const styles = StyleSheet.create({
   },
   btn: {
     marginTop: 15,
+    backgroundColor: '#7078f4',
+    paddingVertical: 5,
   },
 });
 

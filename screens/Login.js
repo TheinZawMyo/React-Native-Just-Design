@@ -7,12 +7,10 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
   View,
-  StatusBar,
 } from 'react-native';
 const Login = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
-      <StatusBar backgroundColor="#5e72e5" />
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <View>
           <View style={styles.imageContainer}>
@@ -40,7 +38,7 @@ const Login = ({navigation}) => {
           <View style={styles.inputContainer}>
             <Button
               mode="contained"
-              style={{paddingVertical: 8}}
+              style={{paddingVertical: 8, backgroundColor: '#7078f4'}}
               onPress={() => navigation.navigate('Home')}>
               Login
             </Button>

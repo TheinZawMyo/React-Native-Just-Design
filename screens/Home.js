@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   Text,
   Image,
-  StatusBar,
 } from 'react-native';
 import {Card, Headline, Searchbar, TextInput} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -59,7 +58,6 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1}}>
-      <StatusBar backgroundColor="#4E36C7" />
       <View style={styles.header}>
         <View style={styles.title}>
           <Headline style={{color: '#fff'}}>Home</Headline>
@@ -94,7 +92,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
     borderBottomLeftRadius: 25,
     borderBottomEndRadius: 25,
-    backgroundColor: '#4E36C7',
+    backgroundColor: '#7078f4',
   },
   card: {
     width: '50%',
